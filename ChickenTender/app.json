@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "ChickenTender",
+    "slug": "ChickenTender",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/chickenTenderIcon.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/chickenTenderIcon.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/chickenTenderIcon.jpg",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/chickenTenderIcon.jpg"
+    }
+  }
+}
