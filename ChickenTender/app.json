@@ -21,7 +21,8 @@
       }
     },
     "web": {
-      "favicon": "./assets/chickenTenderIcon.jpg"
+      "favicon": "./assets/chickenTenderIcon.jpg",
+      "bundler": "metro"
     }
   }
 }
