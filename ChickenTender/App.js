@@ -1,16 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View} from 'react-native';
+import { View } from 'react-native';
 import "./global.css"
-import { ImageBackground } from 'react-native';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
+import FindFoodPage from './Screens/findFoodPage';
+import ProfilePage from './Screens/profilePage';
+import ScheduleMealPage from './Screens/scheduleMealPage';
+
+const Tab = createMaterialBottomTabNavigator()
 
 export default function App() {
   return (
-    <ImageBackground source={require('./assets/appBackground.jpg')} style={{ width: '100%', height: '100%' }} className="flex-1 bg-slate-200 items-center justify-center">
-      <StatusBar style="light" hidden={false} animated={true}/>
-      <View className="rounded-md items-center justify-center bg-slate-500 p-2">
-        <Text className="text-orange-500 font-bold">Chicken Tender</Text>
-      </View>
-    </ImageBackground>
+      <NavigationContainer>
+        <Tab.Navigator>
+          <Tab.Screen name="Schedule Meal" component={ ScheduleMealPage } />
+          <Tab.Screen name="Find Food" component={ FindFoodPage } />
+          <Tab.Screen name="Profile" component={ ProfilePage } />
+        </Tab.Navigator>
+      </NavigationContainer>
   );
 }
 
