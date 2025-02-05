@@ -28,23 +28,23 @@ export default function TabLayout() {
         })
       }}>
       <Tabs.Screen
-        name="explore"
+        name="planAMeal"
         options={{
-          title: 'Explore',
+          title: 'Plan A Meal',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Find A Feast',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="account"
         options={{
-          title: 'Settings',
+          title: 'Account',
           tabBarIcon: ({ color }) => <Ionicons name="settings-sharp" size={24} color={color} />,
         }}
       />

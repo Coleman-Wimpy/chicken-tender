@@ -3,7 +3,7 @@ import React from 'react'
 import { signOut } from '@/util/LogoutUtil'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
-const settings = () => {
+const account = () => {
   return (
     <SafeAreaView>
       <Text>settings</Text>
@@ -12,6 +12,6 @@ const settings = () => {
   )
 }
 
-export default settings
+export default account
 
 const styles = StyleSheet.create({})
